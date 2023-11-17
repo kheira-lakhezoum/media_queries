@@ -1,0 +1,33 @@
+#navbar {
+    display: flex;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+.checkbox{
+    visibility: hidden;
+}
+@media (max-width: 767px) {
+    #navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuToggle:checked ~ #navbar {
+        display: flex;
+    }
+}
